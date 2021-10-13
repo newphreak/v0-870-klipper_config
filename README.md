@@ -1,4 +1,4 @@
-# v0-xxx-klipper_config
+# v0-870-klipper_config
 
 Baby blue's config.
 
