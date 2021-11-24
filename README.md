@@ -1,43 +1,53 @@
 # v0-870-klipper_config
 
-Baby blue's config.
+![V0.1-870](./images/v0.1-870.jpg)
 
-Credits to [eecue](https://github.com/eecue/klippper-config) where most comes from, and [Jasrags](https://github.com/Jasrags/V2-1031-klipper_config) for another big chunk. Just don't let them look at it, they will certainly cry.
+Klipper configs for this printer running fluidd.
+
+# Table of Contents
+**(!)** = has important warning
+- [**(!)** Change Log](#change-log)
+- [Printer Mods](#printer-mods)
+- [Klipper Plugins](#klipper-plugins)
+
+# Change Log
+
+Changes will be noted here by date, title if needed, files changed, summary of changes. 
+
+_**Note: only changes of signifigance will be added.**_
+
+
+- **24-11-2021:** Initial placeholder of changelog layout
+    * Enabled
+        * `configs/dockable_probe.cfg`
+        * `configs/z_calibration.cfg`
+    * Disabled
+        * `configs/probe.cfg`
+	* `configs/bed_mesh.cfg` 
+        * Use dense bed mesh
+            * `probe_count: 5,5` -> `probe_count: 9,9`
+            * `relative_reference_index: 24` -> `relative_reference_index: 77`
+
+# Printer Mods
+
+* [Timmit's klipper expander](https://github.com/VoronDesign/Voron-Hardware/tree/master/Klipper_Expander)
+* [Timmit's umbilical pcb's](https://github.com/VoronDesign/Voron-Hardware/tree/master/V0-Umbilical)
+* [Timmit's v0 display](https://github.com/VoronDesign/Voron-Hardware/tree/master/V0_Display)
+* [221 wago mount for bed](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/BlueBear/Wago_221_mount)
+* [NeverMore v5 duo](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V5_Duo/V0)
+* [1515 snap in led mounts](https://github.com/newphreak/VoronUsers/tree/1515ledmod/printer_mods/Jon/1515_led_mount)
+* [Afterburner Toolhead PCB](https://github.com/VoronDesign/Voron-Hardware/tree/master/Afterburner_Toolhead_PCB)
+* [Klipper Expander](https://github.com/VoronDesign/Voron-Hardware/tree/master/Klipper_Expander)
 
 
 
+# Klipper Plugins
 
+* gcode_shell_command
+* many more
 
+# Credits in no particular order
 
-# KLIPPER CONFIG BACKUP SCRIPT HOWTO
-- `ssh-keygen`
-- `cat ~/.ssh/id_rsa.pub`
-- add to "ssh and gpg keys" on github
-- make `.gitignore` file in klipperconfig and put in `printer-*_*.cfg`
-- Get KIAUH and install shell command extension
-  ```
-  wget https://raw.githubusercontent.com/newphreak/V2-1755-klipper_config/main/autocommit.sh
-  cd ~
-  git clone https://github.com/th33xitus/kiauh.git
-  ./kiauh/kiauh.sh
-  ```
-  Go to (4) Advanced and install the shell command extension (9) (Select yes for everything)
-- Put this in printer.cfg or wherever you have macros:
-
-  ```
-  [gcode_shell_command backup_cfg]
-  command: sh /home/pi/klipper_config/autocommit.sh
-  timeout: 30.0
-  verbose: True
-  [gcode_macro BACKUP_CFG]
-  gcode:
-  RUN_SHELL_COMMAND CMD=backup_cfg
-  ```
-
-- Go back to github and create a new repository (+ menu on the top right corner) and select new repository)
-
-  Use the `<printer type>-<serial>-klipper_config` naming scheme
-- Follow the instructions for pushing readme.md **BUT DO MAKE SURE YOU'VE SELECTED SSH AND NOT HTTP**, do this from ~/klipper_config
-- Go to to fluidd/mainsail and run the backup_cfg macro.
-
-  Voilà.
+* [eecue's klipper configs](https://github.com/eecue/klippper-config)
+* [zellneralex's klipper_configs](https://github.com/zellneralex/klipper_config)
+* [th33xitus/kiauh github klipper backup](https://github.com/th33xitus/kiauh/wiki/How-to-autocommit-config-changes-to-github%3F)
