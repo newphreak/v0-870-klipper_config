@@ -53,6 +53,7 @@ _**Note: only changes of signifigance will be added.**_
 
 # Credits in no particular order
 
+* [VoronDesign](https://github.com/VoronDesign)
 * [eecue's klipper_config](https://github.com/eecue/klippper-config)
 * [zellneralex's klipper_config](https://github.com/zellneralex/klipper_config)
 * [FHeilmann's klipper_config](https://github.com/FHeilmann/klipper_config/)
