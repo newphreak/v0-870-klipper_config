@@ -17,16 +17,23 @@ Changes will be noted here by date, title if needed, files changed, summary of c
 _**Note: only changes of signifigance will be added.**_
 
 
-- **24-11-2021:** Initial placeholder of changelog layout
-    * Enabled
-        * `configs/dockable_probe.cfg`
-        * `configs/z_calibration.cfg`
-    * Disabled
-        * `configs/probe.cfg`
-	* `configs/bed_mesh.cfg` 
-        * Use dense bed mesh
-            * `probe_count: 5,5` -> `probe_count: 9,9`
-            * `relative_reference_index: 24` -> `relative_reference_index: 77`
+- **24-11-2021:** Add nevermore filter warning.
+    * Added
+        * `saved_cariables.cfg`
+            * To get the total's already in fluidd calculate the total time over to seconds and use it in `totalprintingtime`. For total filament used, multiply it by 1000 to get the value in mm.
+            * `filament_used = 0`
+            * `filterusetime = 0`
+            * `lastservicetime = 0`
+            * `totalprintingtime = 0`
+        * `macros/user_variables.cfg`
+            * variable_nevermore_use_time: 80 ; Nevermore change warning limit (In hours)`
+        * `macros/statistics.cfg`
+            * Grab the whole file, it's new. Thanks to [zellneralex](https://github.com/zellneralex/klipper_config/blob/master/printtime.cfg) for making this awesome thing.
+        * `macros/printing.cfg`
+            * Add this to the `[PRINT_END]` macro to start adding time to the statistics, and checking the filter run-time:
+            * `_ADD_PRINT_TIME`
+            * `_SD_PRINT_STATS R='done'`
+            * `_SD_PRINTER_STATS`
 
 # Printer Mods
 
