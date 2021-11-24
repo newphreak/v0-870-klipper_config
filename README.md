@@ -45,7 +45,7 @@ _**Note: only changes of signifigance will be added.**_
 
 # Credits in no particular order
 
-* [eecue's klipper configs](https://github.com/eecue/klippper-config)
+* [eecue's klipper_configs](https://github.com/eecue/klippper-config)
 * [zellneralex's klipper_configs](https://github.com/zellneralex/klipper_config)
 * [FHeilmann's klipper_configs](https://github.com/FHeilmann/klipper_config/)
 * [th33xitus/kiauh klipper github backup](https://github.com/th33xitus/kiauh/wiki/How-to-autocommit-config-changes-to-github%3F)
