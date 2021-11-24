@@ -36,7 +36,6 @@ _**Note: only changes of signifigance will be added.**_
 * [221 wago mount for bed](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/BlueBear/Wago_221_mount)
 * [NeverMore v5 duo](https://github.com/nevermore3d/Nevermore_Micro/tree/master/V5_Duo/V0)
 * [1515 snap in led mounts](https://github.com/newphreak/VoronUsers/tree/1515ledmod/printer_mods/Jon/1515_led_mount)
-* [Afterburner Toolhead PCB](https://github.com/VoronDesign/Voron-Hardware/tree/master/Afterburner_Toolhead_PCB)
 * [Klipper Expander](https://github.com/VoronDesign/Voron-Hardware/tree/master/Klipper_Expander)
 
 
