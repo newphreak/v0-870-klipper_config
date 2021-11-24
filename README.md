@@ -56,3 +56,4 @@ _**Note: only changes of signifigance will be added.**_
 * [zellneralex's klipper_configs](https://github.com/zellneralex/klipper_config)
 * [FHeilmann's klipper_configs](https://github.com/FHeilmann/klipper_config/)
 * [th33xitus/kiauh klipper github backup](https://github.com/th33xitus/kiauh/wiki/How-to-autocommit-config-changes-to-github%3F)
+* [Ette's enraged rabbit carrot feeder macro's for filament unload](https://github.com/EtteGit/EnragedRabbitProject)
