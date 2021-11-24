@@ -43,7 +43,6 @@ _**Note: only changes of signifigance will be added.**_
 # Klipper Plugins
 
 * gcode_shell_command
-* many more
 
 # Credits in no particular order
 
