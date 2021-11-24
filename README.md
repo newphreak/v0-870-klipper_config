@@ -9,6 +9,7 @@ Klipper configs for this printer running fluidd.
 - [**(!)** Change Log](#change-log)
 - [Printer Mods](#printer-mods)
 - [Klipper Plugins](#klipper-plugins)
+- [Credits](#credits-in-no-particular-order)
 
 # Change Log
 
