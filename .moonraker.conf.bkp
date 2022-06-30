@@ -13,9 +13,10 @@ log_path = ~/klipper_logs
 
 [authorization]
 cors_domains = 
-	*.local
-	*.lan
-	*://app.fluidd.xyz
+	https://my.mainsail.xyz
+	http://my.mainsail.xyz
+	http://*.local
+	http://*.lan
 trusted_clients = 
 	10.0.0.0/8
 	127.0.0.0/8
@@ -36,4 +37,10 @@ enable_auto_refresh = True
 type = web
 repo = cadriel/fluidd
 path = ~/fluidd
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
 
