@@ -10,6 +10,7 @@ gcode_store_size = 1000
 [file_manager]
 config_path = ~/klipper_config
 log_path = ~/klipper_logs
+enable_object_processing = True
 
 [authorization]
 cors_domains = 
@@ -28,15 +29,18 @@ trusted_clients =
 
 [octoprint_compat]
 
+[power shelly1]
+type = shelly
+locked_while_printing = True
+restart_klipper_when_powered = True
+address = 192.168.1.12
+output_id = 0
+off_when_shutdown = True
+
 [history]
 
 [update_manager]
 enable_auto_refresh = True
-
-[update_manager client fluidd]
-type = web
-repo = cadriel/fluidd
-path = ~/fluidd
 
 [update_manager mainsail]
 type = web
