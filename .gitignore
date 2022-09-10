@@ -3,3 +3,4 @@ macros/common
 scripts/common
 config/common
 .moonraker.conf.bkp
+.gitignore
