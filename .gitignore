@@ -2,3 +2,4 @@ printer-*_*.cfg
 macros/common
 scripts/common
 config/common
+.moonraker.conf.bkp
