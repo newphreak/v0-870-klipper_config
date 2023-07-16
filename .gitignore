@@ -1,5 +1,5 @@
 printer-*_*.cfg
-macros/common
-scripts/common
-config/common
+*.*.bkp
 .moonraker.conf.bkp
+adxl_results/
+*.*.backup
